@@ -1,0 +1,45 @@
+.slices {
+    width: 1272.2px;
+    height: 505px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .image-slider {
+    width: 4000px;
+  }
+  .center-content {
+    display: flex;
+    animation: moveImages 9s linear infinite;
+  }
+  @keyframes moveImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100px);
+    }
+  }
+ .trendtext {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top:1277px;
+    text-align: center;
+  }
+  .image-slider img {
+    width: 190px;
+    height: 340px;
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .image-slider img:hover {
+    width: 240px;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 11px rgba(255, 251, 251, 0.3);
+  }

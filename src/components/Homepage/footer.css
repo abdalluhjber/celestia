@@ -1,0 +1,114 @@
+footer{
+    display: contents;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+ width: 100%;
+ position: absolute;
+ background-color: black;
+ color: #ccc;
+ padding: 100px 0 30px;
+ border-top-left-radius: 200px ;
+ font-size: 13px;
+ line-height: 20px;
+}
+footer .row{
+    border-top-left-radius: 125px;
+    border-color: white;
+    border: 1px solid white;
+    border-bottom: none;
+    border-right: none;
+    width: 1090px;
+}
+.footer-logo{
+    margin-top: 60px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 5%;
+    padding: 10px;
+}
+.col ul li{
+  text-align: left;
+}
+.col:nth-child(2),.col:nth-child(3){
+flex-basis: 10%;
+}
+.footer-logo{
+    width: 120px;
+    height: 75px;
+    margin-bottom: 40px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position:relative;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration:none;
+    color:#ccc;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form input{
+    width: 100%;
+    background:transparent;
+    color: #ccc;
+    border: 0;
+    outline:none;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+}
+.arrow{
+    cursor: pointer;
+    width: 12px;
+height: 12px;
+}
+ .social-icons img{
+  width: 40px;
+ height: 40px;
+}
+.gmail{
+width: 23px;
+height: 21px;
+margin-right: 5px;
+margin-bottom: 4px;
+}
+.social-icons1:hover{
+ opacity : 0.8;
+}
+.social-icons2:hover{
+    opacity : 0.8;
+   }
+   .social-icons3:hover{
+    opacity : 0.8;
+   }
+hr{
+    width: 90%;
+    border:0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copy{
+text-align: center;
+}

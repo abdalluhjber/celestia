@@ -1,0 +1,6 @@
+body{
+    overflow-x:hidden;
+}
+@media  screen and(min-width:1024px) {
+    .container-home{max-width:  1024px; } 
+}

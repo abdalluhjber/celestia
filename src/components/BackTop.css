@@ -1,0 +1,29 @@
+.totop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: gray;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+  
+}
+.totop img{
+  position: fixed;
+  width:30px ;
+  height: 30px;
+  bottom: 13px;
+  right: 15px;
+}
+
+.totop:hover{
+ /*background-color: rgb(152, 151, 151);*/
+ background-color: rgb(188, 162, 14);
+}
+

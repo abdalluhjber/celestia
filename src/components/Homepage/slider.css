@@ -1,0 +1,9 @@
+.carousel-item img{
+    height: 600px;
+    min-height: 200px;
+  }
+  .carousel-caption{
+    bottom: 220px;
+    right: 800px;
+  }
+  

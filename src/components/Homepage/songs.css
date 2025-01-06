@@ -1,0 +1,80 @@
+.songbody {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.songbody img{
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  object-fit: cover;
+}
+.effect{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.spotify-icon  {
+  width: 50px;
+  height: 50px;
+  max-width: 60%;
+  max-height: 60%;
+  margin: 0 auto;
+}
+
+
+
+.songbody:hover .effect{
+  opacity: 1;
+}
+.songbody:hover img{
+  transform: scale(1.1);
+}
+
+@media (min-width: 1200px) {
+  .songbody img {
+      height: 300px; 
+  }
+  .spotify-icon {
+      width: 60px; 
+      height: 60px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .songbody img {
+      height: 250px; 
+  }
+  .spotify-icon {
+      width: 50px; 
+      height: 50px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+.songbody img {
+    height: 250; 
+}
+.spotify-icon {
+    width: 40px; 
+    height: 40px;
+
+}
+}

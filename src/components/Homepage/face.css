@@ -1,0 +1,279 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden ;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: "Cormorant", serif;
+    font-weight: bold;
+    background-color: black;
+    color:#fff;
+    overflow-x: hidden;
+  }
+  
+  .home{
+    background-color:#ccc;
+    background-image: url("/public/images/mainphoto.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 700px;
+   
+  }
+  
+  .home-text{
+    font-weight: 700;
+    padding-top: 300px;
+    text-align: center;
+    color: white;
+    animation: show 1s linear ;
+    padding: 0 20px;
+  }
+  
+  .logo img{
+    max-width: 150px;
+  }
+  
+  
+  
+  .design{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+  }
+  .design img{
+    width: 70%;
+  }
+  
+  .hero{
+    position: relative;
+    background-color:#ccc;
+    background-image: url("/public/images/mainphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+     width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0);
+  }
+  .navhome{
+  text-decoration: none;
+  font-family: "Cormorant", serif;
+  color: #fff;
+  transition: color 0.3s ease;
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+  
+  }
+  
+  
+  .navhome:hover{
+    color: #bbb;
+    
+  }
+  
+  .threenav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  }
+  .threenav a,
+  .threenav button {
+    margin: 0 20px; 
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  
+  .row{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+     }
+    
+    .logo{
+       margin-left: 80px;
+       margin-top: 30px;
+     
+    }
+  
+  .modal-content {
+      background-color: rgba(48, 45, 45, 0.8); 
+      border: none;
+      backdrop-filter: blur(10px); 
+  }
+  .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .transparent-btn {
+      background-color: transparent; 
+      border: none; 
+      color: #ffffff; 
+      font-size: 1rem; 
+      font-weight: bold; 
+      cursor: pointer; 
+      transition: color 0.3s ease;
+  }
+  
+  .transparent-btn:hover {
+      color: #bbb; 
+  }
+  
+  .transparent-btn:focus {
+      outline: none;
+  }
+  
+  
+  
+  
+  .login-container{
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    top: 15px;
+    
+  }
+  
+  .login{
+    border: 1px solid white;
+      background-color: black;
+      padding: 10px 25px; 
+      border-radius: 30px;
+      color: white;
+      font-size: 15px;
+      transition: 0.5s;
+      margin-right: 80px;
+     
+    }
+    .login-a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .login:hover{
+      border:1px solid #bbb ;
+      color: #bbb;
+    }
+    
+  
+  
+  
+  
+  
+    @media (max-width: 768px) {
+      .home {
+        height: 500px;
+      }
+  
+      .design img {
+        width: 100%;
+        
+      }
+    
+      nav {
+        flex-direction: column;
+        padding: 5px;
+      }
+    
+      .logo {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    
+      .threenav {
+        justify-content: center;
+     
+      }
+    
+      .login-container {
+        margin-top: -120px;
+        margin-left: 420px;
+        
+      }
+    
+      .login {
+        margin-right: 0;
+      }
+      .logo img{
+        max-width: 120px;
+      }
+    
+      .hero {
+        height: 80vh;
+      }
+    
+      .home-text {
+        font-size: 2.5rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .home {
+        height: 70px;
+      }
+      .hero{
+        height: 70vh;
+      }
+    
+      .design img {
+        width: 100%;
+      }
+      .logo img{
+        max-width: 100px;
+      }
+    
+      nav {
+        padding: 10px;
+      }
+    
+      .logo img {
+        max-width: 100px;
+      }
+    
+      .login {
+        padding: 5px 12px;
+        font-size:12px;
+      }
+      .login-container {
+       margin-top: 10px;
+      }
+      
+     
+     
+  
+  
+      .home-text {
+        padding: 0 20px;
+        
+      }
+    
+      .home-text h1{
+        font-size: 2rem;
+        
+      }
+      .home-text h3{
+        font-size: 1.2rem;
+        
+      }
+    
+      .threenav a,
+      .threenav button {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+    
