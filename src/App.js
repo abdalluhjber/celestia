@@ -5,12 +5,18 @@ import Homepage from './components/Homepage/homepages'
 import Charecterpage from './components/charecter/charecterpage';
 import Categorypage from './components/category/Categorypage';
 import BackTop from './components/BackTop';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 function App() {
   return (
    <div>
       <BrowserRouter>
     <Routes>
       <Route path="/" element={< Homepage/>} />
+      
+      <Route path="SignIn" element={< SignIn/>} />
+      <Route path="SignUp" element={< SignUp/>} />
+
       <Route path="/actors">
       <Route index element={<Categorypage category="actors" />} />
       <Route path=":name" element={<Charecterpage />} />

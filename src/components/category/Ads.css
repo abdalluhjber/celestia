@@ -96,7 +96,7 @@ display: flex;
     width: 200px;
     height: 200px;
     margin-right: 4px;
-    filter: drop-shadow(1px 1px 20px rgb(248, 214, 18));
+    filter: drop-shadow(1px 1px 15px rgb(231, 210, 87));
     flex-grow: 1;
     flex-basis: 200;
 }

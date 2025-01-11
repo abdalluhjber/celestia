@@ -1,4 +1,5 @@
 export const actorsData = {
+  
     imgprof1: "/images/bradpitt1.jpg",
     name1: "Brad Pitt",
     text1: "Brad Pitt is an acclaimed American actor and producer, born on December 18, 1963. Known",
@@ -20,6 +21,8 @@ export const actorsData = {
     text9: "He is associated with various luxury brands and campaigns.",
     text10: "Theo has collaborated with brands like Hugo Boss for their campaigns.",
     nameads2: "Hugo Boss",
+    brand3: "/images/brand1.png",
+    brand4: "/images/brand2.png",
     buy2: "buy",
     img2: "/images/theo.png",
   
@@ -31,6 +34,8 @@ export const actorsData = {
     text14: "She is also a UNHCR Goodwill Ambassador and a prominent advocate for human rights.",
     text15: "Angelina has been the face of brands like Louis Vuitton and Guerlain.",
     nameads3: "Louis Vuitton",
+    brand5: "/images/brand1.png",
+    brand6: "/images/brand2.png",
     buy3: "buy",
     img3: "/images/angelina.png",
   };
@@ -45,8 +50,8 @@ export const playersData = {
     text4: "He is a global icon and brand ambassador for Adidas and several other companies.",
     text5: "His philanthropy includes work through the Leo Messi Foundation.",
     nameads1: "Adidas",
-    brand1: "/imges/brand1.png",
-    brand2: "/imges/brand2.png",
+    brand1: "/images/brand1.png",
+    brand2: "/images/brand2.png",
     buy1: "buy",
     img1: "/images/m10.png",
   
@@ -58,8 +63,8 @@ export const playersData = {
     text9: "He is known for his signature Air Jordan sneakers and his ownership of the Charlotte Hornets.",
     text10: "Beyond sports, Jordan is involved in numerous philanthropic initiatives.",
     nameads2: "Nike",
-    brand3: "/iamges/brand1.png",
-    brand4: "/iamges/brand2.png",
+    brand3: "/images/brand1.png",
+    brand4: "/images/brand2.png",
     buy2: "buy",
     img2: "/images/mi23.png",
   
@@ -71,8 +76,8 @@ export const playersData = {
     text14: "Ronaldo's legacy extends beyond sports, as he remains an inspiration for generations.",
     text15: "He has been featured in campaigns for major brands like Gatorade and Adidas.",
     nameads3: "Gatorade",
-    brand5: "/images/brand5.png",
-    brand6: "/images/brand6.png",
+    brand5: "/images/brand1.png",
+    brand6: "/images/brand2.png",
     buy3: "buy",
     img3: "/images/r7.png",
   };

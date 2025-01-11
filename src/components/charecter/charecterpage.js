@@ -1,3 +1,4 @@
+
 import React from "react";
 import Movie from "./Movie";
 import { movies } from "./moviesList";
@@ -8,7 +9,9 @@ import MediaSection from "./mediasection";
 import './interface.css'
 import Navbar from "../Homepage/facenavbar";
 import Navbar2 from "./navbar";
-
+import OverViewphtot from "./overview";
+import './overviewcss.css';
+import Bioo from "./Bioo";
 
 const Charecterpage = () => {
   const { name } = useParams();
@@ -22,10 +25,10 @@ const Charecterpage = () => {
   return (
   
     <div>
-      <Navbar2/>
-      
+     
+     
       <div className="bradpro">
-        
+      <Navbar2/>
         <NameInfo name={celebrity.name} />
         <MediaSection
           imageSrc={celebrity.imageSrc}
@@ -36,10 +39,46 @@ const Charecterpage = () => {
           videoSrcWebm={celebrity.videoSrcWebm}
           videoDescription={celebrity.videoDescription}
         />
+         
       </div>
+      <div  className="page-info">
+   <OverViewphtot 
+       born={celebrity.born} 
+      birthname={celebrity.birthname} 
+    nickname={celebrity.nickname} 
+    height={celebrity.height} 
+    img1={celebrity.img1} 
+    img2={celebrity.img2} 
+    img3={celebrity.img3} 
+    img4={celebrity.img4} 
+    img5={celebrity.img5} 
+    img6={celebrity.img6} 
+    img7={celebrity.img7} 
+    img8={celebrity.img8} 
+    img9={celebrity.img9} 
+    img10={celebrity.img10} 
+  />
 
-     
-      <section className="movies p-4">
+   
+
+
+<Bioo
+                
+  birth={celebrity.birth}
+  parents={celebrity.parents}
+  school={celebrity.school}
+  university={celebrity.university}
+  address={celebrity.address}
+  careerbefore={celebrity.careerbefore}
+   firstcareer={celebrity.firstcareer}
+ currentcareer={celebrity.currentcareer}
+    marriages={celebrity.marriages}
+   children={celebrity.children}
+                />
+
+
+
+  <section className="movies p-4">
         <h1 className="heading">Movies</h1>
         <div className="movies-container d-flex justify-content-center flex-wrap">
           {movies[name]?.map((movie, index) => (
@@ -55,8 +94,13 @@ const Charecterpage = () => {
           ))}
         </div>
       </section>
+      
+      </div>
     </div>
   );
 };
 
 export default Charecterpage;
+
+
+

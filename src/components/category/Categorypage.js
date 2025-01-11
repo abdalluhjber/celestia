@@ -1,5 +1,7 @@
 import React from "react";
 import Names from "./Names";
+import {actorsData,playersData,musiciansData} from "./Adsdata"
+import Ads from "./Ads"
 const Categorypage = ({category}) => {
   const categories = {
     singers: [
@@ -27,11 +29,15 @@ const Categorypage = ({category}) => {
     { title: 'Cristiano Ronaldo', images: '/images/Cristiano Ronaldo Wallpaper 🇵🇹.jpeg' },
   ],
 }
-
-
+const adsData = {
+  actors: actorsData,
+  athletes: playersData,
+  singers: musiciansData,
+};
   return(
     <div>
-      
+      <Ads {...adsData[category]} />
+      <br></br>
       <Names names={categories[category]} />
     </div>
   )

@@ -6,7 +6,7 @@ import './face.css';
 import Slider from './Slider'; 
 import Songs from './songs';
 import TrendingSlider from './trendingslider';
-
+ 
 
 function Homepages() {
   const [showAboutModal, setShowAboutModal] = useState(false);
@@ -91,11 +91,12 @@ function Homepages() {
         onClose={() => setShowContactModal(false)}
         title="Contact Us"
         content="Reach out to us at contact@celestia.com." />
-      <Slider title="Categories" link1="/athletes" image1="/images/messi.jpg"
-        link2="/actors" image2="/images/trump.jpg"
-        link3="/singers" image3="/images/drake.jpg" desc="Ctegories" />
+      <Slider title="Categories" link1="/athletes" image1="/images/athlets homepage.jpeg"
+        link2="/actors" image2="/images/actor homepage.jpeg"
+        link3="/singers" image3="/images/singers homepage.jpeg" desc="Ctegories" />
 
        <TrendingSlider/>
+
 
 
 

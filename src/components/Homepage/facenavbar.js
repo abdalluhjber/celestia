@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ setShowAboutModal, setShowContactModal }) => {
+  const navigate = useNavigate();
   return (
     <nav>
       <div className="logo">
@@ -22,8 +24,8 @@ const Navbar = ({ setShowAboutModal, setShowContactModal }) => {
         </button>
       </div>
       <div className="login-container">
-        <button type="button" className="login">
-          Log in
+        <button type="button" className="login" onClick={() => navigate('/SignIn')}>
+          login
         </button>
       </div>
     </nav>

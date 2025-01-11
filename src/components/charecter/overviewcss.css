@@ -1,0 +1,184 @@
+
+.page-info{
+    background-color: white;
+}
+
+.textphoto{
+    margin-top: 3rem;
+    font-style: oblique;
+    font-size: 3rem;
+    color:black;
+
+  }
+
+  .page-overphoto{
+    margin-top: 0;
+  }
+  .bio li{
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.833);
+    transition: 0.5s;
+    animation: show 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+  color: #000;
+  }
+  /*main{
+    position: relative;
+  }*/
+  .bio li:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform:  scale(1.05);
+    background-color: #ccc;
+    color: #000;
+  }
+  ul li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  .all-img{
+    width: 500px ;
+    height: 400px ;
+    overflow: hidden;
+    border-radius:20px ;
+    border: 2px solid rgba(128, 128, 128, 0.833);
+    animation: show 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    }
+  .animation-img{
+    display: grid;
+    grid-template-columns: repeat(10,400px);
+    }
+    .animation-img img{
+      width: 400px;
+      height: 400px;
+    }
+    .animation-img:hover{
+      animation: brad 25s infinite;
+      animation-play-state:running;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      cursor: pointer;
+    }
+    @keyframes brad  {
+      0% { transform: translateX(0);}
+      100% { transform: translateX(-3400px);
+      }
+    }
+    @keyframes show{
+        from{
+          opacity: 0;
+          scale: 0.5;
+        }
+        to{
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      @media(max-width: 1300px) {
+
+        .all-img{
+          width: 300px ;
+          height: 400px ;
+          overflow: hidden;
+          border-radius:20px ;
+          border: 2px solid rgba(128, 128, 128, 0.833);
+          animation: show 2s linear;
+          animation-timeline: view();
+          animation-range: entry 0;
+          }
+
+
+          @keyframes brad  {
+            0% { transform: translateX(0);}
+            100% { transform: translateX(-2400px);
+            }
+          }
+          
+          .animation-img{
+            display: grid;
+            grid-template-columns: repeat(10,300px);
+            }
+            .animation-img img{
+              width: 300px;
+              height: 400px;
+            }
+           .page-overphoto{
+            margin-top: 50rem;
+           }
+      }
+
+
+      @media(max-width: 768px) {
+
+        .all-img{
+          width: 200px ;
+          height: 400px ;
+          overflow: hidden;
+          border-radius:20px ;
+          border: 2px solid rgba(128, 128, 128, 0.833);
+          animation: show 2s linear;
+          animation-timeline: view();
+          animation-range: entry 0;
+        
+          }
+
+
+          @keyframes brad  {
+            0% { transform: translateX(0);}
+            100% { transform: translateX(-2000px);
+            }
+          }
+          
+          .animation-img{
+            display: grid;
+            grid-template-columns: repeat(10,200px);
+            }
+            .animation-img img{
+              width: 200px;
+              height: 400px;
+            }
+
+
+            .page-overphoto{
+             margin-top: 50rem;
+            }
+      }
+
+
+      @media(max-width: 550px) {
+
+        .all-img{
+          width: 200px ;
+          height: 400px ;
+          overflow: hidden;
+          border-radius:20px ;
+          border: 2px solid rgba(128, 128, 128, 0.833);
+          animation: show 2s linear;
+          animation-timeline: view();
+          animation-range: entry 0;
+          }
+
+
+          @keyframes brad  {
+            0% { transform: translateX(0);}
+            100% { transform: translateX(-1800px);
+            }
+          }
+          
+          .animation-img{
+            display: grid;
+            grid-template-columns: repeat(10,200px);
+            }
+            .animation-img img{
+              width: 200px;
+              height: 400px;
+            }
+          .page-overphoto{
+            margin-top: 50rem;
+          }
+      }

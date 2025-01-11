@@ -1,0 +1,42 @@
+.textphoto {
+    margin-top: 3rem;
+    font-style: oblique;
+    font-size: 3rem;
+  }
+  
+  .group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: oo 2s linear;
+  }
+  
+  .part-textBIO {
+    border: 1px solid rgb(131, 128, 109);
+    width: 32%;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    color: #38040E; 
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.5s;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .part-textBIO:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  @keyframes oo {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

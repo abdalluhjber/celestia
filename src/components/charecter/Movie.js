@@ -3,8 +3,9 @@ import './Movie.css';
 
 const Movie=(props)=>{
   return(
-
+  
 <div className="movie col-md-6 col-lg-4">
+<div  className="page-info">
       <div className="mov-top d-flex align-items-center">
         <div className="mov-image">
           <img src={props.picture} alt={props.desc}/>
@@ -19,8 +20,9 @@ const Movie=(props)=>{
           <p>{props.summary}</p>
         </div>
       </div>
+      </div>
     </div>
-
+   
   )
 }
 export default Movie
