@@ -22,7 +22,7 @@ const SignIn = ({ setCurrentPage }) => {
      
         <fieldset className="register-an-account">
           <legend className="registration-type">Sign in</legend>
-      
+          <div className="input-order">
             <label htmlFor="email" className="taginput">Email</label>
             <input
               type="email"
@@ -55,7 +55,7 @@ const SignIn = ({ setCurrentPage }) => {
             <div onClick={() => setCurrentPage('signup')} className="switch-registrtion">
               Don't have an account? 
             </div>
-         
+          </div>
         </fieldset>
       
       {error && <p className="error-message">{error}</p>}
